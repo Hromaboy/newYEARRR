@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>С Новым  вас 2026 Годом! ✨</title>
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-cyan: #00ffff;
+            --neon-yellow: #fff01a;
+            --neon-green: #39ff14;
+            --light-blue: #e6f7ff;
+            --hot-pink: #ff69b4;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 20%),
+                url('https://placehold.co/80x80/e6f7ff/000080?text  =❄'),
+                url('https://placehold.co/80x80/e6f7ff/8a2be2?text  =🦌');
+            background-position: 0 0, 40px 40px, 80px 80px;
+            background-repeat: repeat;
+            background-color: var(--light-blue);
+            font-family: "Comic Sans MS", "MS Sans Serif", cursive, sans-serif;
+            color: #000080;
+            margin: 0;
+            padding: 10px;
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .blink {
+            animation: blink 0.7s infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0.3; }
+        }
+        
+        .marquee-container {
+            background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan), var(--neon-yellow), var(--neon-green));
+            padding: 10px;
+            margin: 15px 0;
+            border: 3px dashed var(--hot-pink);
+            border-radius: 12px;
+            box-shadow: 0 0 10px var(--neon-cyan), 0 0 15px var(--neon-pink);
+            transform: rotate(-1deg);
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 5px yellow;
+            letter-spacing: 1px;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #ffffff, #d9f0ff);
+            border: 4px ridge var(--neon-pink);
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(255,0,255,0.5), 
+                        inset 0 0 15px rgba(0,255,255,0.3);
+            position: relative;
+            z-index: 10;
+            transform: skewX(-1deg);
+        }
+        
+        h1 {
+            font-size: clamp(28px, 8vw, 56px);
+            text-align: center;
+            background: linear-gradient(to right, var(--neon-pink), var(--neon-cyan), var(--neon-yellow), var(--neon-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 0 var(--hot-pink), -2px -2px 0 var(--neon-cyan);
+            margin: 10px 0 15px;
+            letter-spacing: 2px;
+            transform: skewX(1deg);
+            animation: rainbow-text 8s infinite linear;
+            line-height: 1.2;
+        }
+        
+        @keyframes rainbow-text {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        
+        .santa-container {
+            text-align: center;
+            margin: 15px 0;
+            animation: pulse 2s infinite;
+            background: linear-gradient(45deg, #ff9ec6, #a6f7ff);
+            padding: 15px;
+            border-radius: 15px;
+            border: 3px solid var(--neon-yellow);
+            box-shadow: 0 0 15px rgba(255,255,0,0.7);
+        }
+        
+        .santa-gif {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            aspect-ratio: 1/1;
+            background: linear-gradient(45deg, #ff4d4d, #ffcc00);
+            border: 3px solid gold;
+            border-radius: 12px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(24px, 6vw, 36px);
+            color: white;
+            text-shadow: 1px 1px 0 #000;
+            box-shadow: 0 0 15px rgba(255,215,0,0.8);
+            animation: disco 0.5s infinite;
+        }
+        
+        @keyframes disco {
+            0% { box-shadow: 0 0 15px rgba(255,215,0,0.8); }
+            50% { box-shadow: 0 0 25px rgba(0,255,255,0.9); }
+            100% { box-shadow: 0 0 15px rgba(255,0,255,0.8); }
+        }
+        
+        .tree-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .tree {
+            width: clamp(100px, 25vw, 180px);
+            height: clamp(120px, 35vw, 250px);
+            background: linear-gradient(to right, #4caf50, #2e7d32);
+            clip-path: polygon(50% 0%, 10% 100%, 90% 100%);
+            position: relative;
+            border-radius: 0 0 8px 8px;
+            animation: shake 0.1s infinite;
+            box-shadow: 0 3px 10px rgba(0,100,0,0.5);
+        }
+        
+        .tree::before {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 35%;
+            width: 30%;
+            height: 25px;
+            background: #8b4513;
+            border-radius: 0 0 3px 3px;
+        }
+        
+        .tree::after {
+            content: '★';
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: clamp(18px, 5vw, 30px);
+            color: gold;
+            text-shadow: 0 0 8px yellow;
+        }
+        
+        /* Гирлянды для елок */
+        .tree .lights {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .light {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: light-blink 0.8s infinite;
+        }
+        
+        .light:nth-child(1) { animation-delay: 0s; }
+        .light:nth-child(2) { animation-delay: 0.2s; }
+        .light:nth-child(3) { animation-delay: 0.4s; }
+        .light:nth-child(4) { animation-delay: 0.6s; }
+        .light:nth-child(5) { animation-delay: 0.8s; }
+        .light:nth-child(6) { animation-delay: 1s; }
+        .light:nth-child(7) { animation-delay: 1.2s; }
+        .light:nth-child(8) { animation-delay: 1.4s; }
+        
+        @keyframes light-blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.2); }
+        }
+        
+        .cat-container {
+            text-align: center;
+            margin: 20px 0;
+            background: linear-gradient(145deg, #ffcc00, #ff9900);
+            padding: 15px;
+            border: 3px inset #ff3399;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,204,0,0.8);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cat-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 4px solid white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: cat-bounce 2s infinite;
+        }
+        
+        @keyframes cat-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .wishes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .wishes-marquee {
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-cyan), var(--neon-yellow), var(--neon-green));
+            padding: 8px;
+            border: 2px solid var(--hot-pink);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px var(--neon-cyan), 0 0 15px var(--neon-pink);
+        }
+        
+        .wishes-content {
+            display: inline-block;
+            white-space: nowrap;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 3px yellow;
+            letter-spacing: 1px;
+        }
+        
+        .wishes-content.forward {
+            animation: marquee 15s linear infinite;
+        }
+        
+        .wishes-content.backward {
+            animation: marquee-backward 15s linear infinite;
+        }
+        
+        @keyframes marquee-backward {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        
+        .button-container.horizontal {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background: linear-gradient(to bottom, var(--hot-pink), #ff1493);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-family: "Comic Sans MS", cursive;
+            font-size: clamp(18px, 5vw, 24px);
+            font-weight: bold;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #c71585, 
+                        0 0 10px rgba(255,105,180,0.7),
+                        inset 0 0 8px rgba(255,255,255,0.5);
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #c71585, 
+                        0 0 15px rgba(255,105,180,0.9),
+                        inset 0 0 10px rgba(255,255,255,0.7);
+        }
+        
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #c71585;
+        }
+        
+        button.cringe-btn {
+            background: linear-gradient(45deg, var(--neon-green), var(--neon-yellow), var(--neon-cyan), var(--neon-pink));
+            animation: rainbow-border 2s linear infinite;
+            box-shadow: 0 0 10px rgba(255,0,255,0.8);
+        }
+        
+        @keyframes rainbow-border {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        
+        .snowflake {
+            position: fixed;
+            top: -20px;
+            font-size: clamp(12px, 3vw, 28px);
+            color: white;
+            text-shadow: 0 0 5px var(--neon-cyan);
+            z-index: -1;
+            animation: fall linear forwards;
+        }
+        
+        @keyframes fall {
+            to { 
+                transform: translateY(100vh) rotate(360deg); 
+                opacity: 0.7;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: clamp(16px, 4vw, 22px);
+            color: var(--neon-pink);
+            text-shadow: 0 0 8px var(--neon-cyan);
+            padding: 10px;
+            border-top: 2px dashed var(--neon-yellow);
+        }
+        
+        .scroll-indicator {
+            text-align: center;
+            margin: 12px 0;
+            font-size: clamp(18px, 5vw, 24px);
+            color: var(--neon-cyan);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-8px);}
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background: linear-gradient(45deg, var(--neon-pink), var(--neon-cyan), var(--neon-yellow), var(--neon-green));
+            padding: 25px;
+            border-radius: 25px;
+            border: 4px solid white;
+            box-shadow: 0 0 30px white, 0 0 60px yellow;
+            text-align: center;
+            max-width: 100%;
+            animation: modal-pop 0.5s, rainbow-bg 5s infinite linear;
+            font-size: clamp(16px, 4vw, 20px);
+            line-height: 1.4;
+        }
+        
+        @keyframes modal-pop {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes rainbow-bg {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        
+        .modal h2 {
+            font-size: clamp(28px, 7vw, 48px);
+            margin: 0 0 15px;
+            text-shadow: 0 0 10px white;
+            color: white;
+            animation: text-glow 1.5s infinite alternate;
+        }
+        
+        @keyframes text-glow {
+            from { text-shadow: 0 0 10px white; }
+            to { text-shadow: 0 0 25px yellow, 0 0 35px cyan, 0 0 45px magenta; }
+        }
+        
+        .close-btn {
+            background: white;
+            color: var(--neon-pink);
+            border: 2px solid var(--neon-cyan);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: clamp(16px, 4vw, 20px);
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .close-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px white;
+        }
+        
+        /* Mobile optimizations */
+        @media (min-width: 768px) {
+            .container {
+                padding: 25px;
+                border-width: 6px;
+                border-radius: 25px;
+            }
+            
+            .button-container {
+                flex-direction: row;
+                gap: 15px;
+            }
+            
+            .santa-gif {
+                width: 300px;
+                height: 250px;
+                font-size: 36px;
+            }
+            
+            .cat-image {
+                max-width: 400px;
+            }
+            
+            .tree {
+                width: 180px;
+                height: 250px;
+            }
+        }
+        
+        /* Disable animations on mobile for better performance */
+        @media (max-width: 767px) {
+            .snowflake {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>С НОВЫМ 2026 ГОДОМ! ✨🎄</h1>
+        
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <b>О, привет, а я вас знаю! Други мои, пусть новый год будет ярким как эта страница ✨🎉</b>
+            </div>
+        </div>
+        
+        <div class="santa-container">
+            <div class="santa-gif">🎅💃🕺</div>
+            <p class="blink" style="font-size: clamp(20px, 5vw, 28px); color: var(--neon-pink); font-weight: bold;">
+                🔥 ↓ Жмякай на кнопку снизу ↓ 🔥
+            </p>
+        </div>
+        
+        <div class="button-container horizontal">
+            <button onclick="showCringeModal()">КРИНЖ ПОЗДРАВЛЕНИЕ</button>
+        </div>
+        
+        <div class="wishes-container">
+            <div class="wishes-marquee">
+                <div class="wishes-content forward">
+                    С Новым Годом! 🎉 Удачи! 💫 Счастья! 🌟 Радости! 😊 Веселья! 🎊 Любви! ❤️ Здоровья! 💪 Успехов! 🚀 Вдохновения! ✨
+                </div>
+            </div>
+            <div class="wishes-marquee">
+                <div class="wishes-content backward">
+                    Пусть 2026 будет волшебным! ✨ С мечтами! 🌈 С надеждами! 💫 С чудесами! 🎄 С улыбками! 😊 С теплом! 🔥 С праздником! 🎉
+                </div>
+            </div>
+        </div>
+        
+        <div class="tree-container">
+            <div class="tree">
+                <div class="lights">
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                    <div class="light" style="background: var(--neon-cyan);"></div>
+                    <div class="light" style="background: var(--neon-yellow);"></div>
+                    <div class="light" style="background: var(--neon-green);"></div>
+                    <div class="light" style="background: var(--hot-pink);"></div>
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                    <div class="light" style="background: var(--neon-cyan);"></div>
+                    <div class="light" style="background: var(--neon-yellow);"></div>
+                </div>
+            </div>
+            <div class="tree">
+                <div class="lights">
+                    <div class="light" style="background: var(--neon-green);"></div>
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                    <div class="light" style="background: var(--neon-cyan);"></div>
+                    <div class="light" style="background: var(--neon-yellow);"></div>
+                    <div class="light" style="background: var(--hot-pink);"></div>
+                    <div class="light" style="background: var(--neon-green);"></div>
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                    <div class="light" style="background: var(--neon-cyan);"></div>
+                </div>
+            </div>
+            <div class="tree">
+                <div class="lights">
+                    <div class="light" style="background: var(--neon-yellow);"></div>
+                    <div class="light" style="background: var(--neon-green);"></div>
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                    <div class="light" style="background: var(--neon-cyan);"></div>
+                    <div class="light" style="background: var(--hot-pink);"></div>
+                    <div class="light" style="background: var(--neon-yellow);"></div>
+                    <div class="light" style="background: var(--neon-green);"></div>
+                    <div class="light" style="background: var(--neon-pink);"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cat-container">
+            <img src="https://media1.tenor.com/m/7pzJnti052wAAAAd/pat.gif" alt="Новогодний котик" class="cat-image">
+        </div>
+        
+        <footer>
+            <p>Сделано с ❤️ для Вас </p>
+            <p class="blink" style="color: var(--neon-green); text-shadow: 0 0 10px yellow; margin-top: 5px;">СЧАСТЛИВОГО НОВОГО 2026 ГОДА!</p>
+        </footer>
+    </div>
+    
+    <div class="modal" id="cringeModal">
+        <div class="modal-content">
+            <h2>САМОЕ КРИНЖОВОЕ ПОЗДРАВЛЕНИЕ!</h2>
+            <p style="color: white; text-shadow: 0 0 15px yellow; margin: 15px 0;">
+               ✨ Ну вы знаете, детей богатых и вот это все но если честно спасибо, что вы есть, без вас праздник как елка без гирлянды. Обнял-приподнял, всех чмок в пупок, пусть новый год принесет кучу бабок, поводов для смеха(желательно нам всем вместе) и здоровье, навеки ваш - Никитка IT ✨💃🕺
+            </p>
+            <button class="close-btn" onclick="hideCringeModal()">ЗАКРЫТЬ</button>
+        </div>
+    </div>
+
+    <script>
+        // Падающие снежинки
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = ['❄', '❅', '❆', '✨', '💙'][Math.floor(Math.random() * 5)];
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            document.body.appendChild(snowflake);
+            
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+        
+        // Создаем меньше снежинок на мобильных устройствах
+        const snowflakeInterval = setInterval(createSnowflake, window.innerWidth > 768 ? 150 : 300);
+        
+        // Модальное окно для кринж-поздравления
+        function showCringeModal() {
+            document.getElementById('cringeModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function hideCringeModal() {
+            document.getElementById('cringeModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Закрытие модального окна по клику вне контента
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('cringeModal');
+            if (e.target === modal) {
+                hideCringeModal();
+            }
+        });
+        
+        // Адаптивные настройки
+        function adjustForMobile() {
+            const isMobile = window.innerWidth < 768;
+            
+            // На мобильных устройствах уменьшаем количество снежинок
+            clearInterval(snowflakeInterval);
+            setInterval(createSnowflake, isMobile ? 300 : 150);
+            
+            // Отключаем некоторые анимации для лучшей производительности
+            if (isMobile) {
+                document.querySelectorAll('.tree, .santa-container, .marquee-container').forEach(el => {
+                    el.style.animation = 'none';
+                });
+            }
+        }
+        
+        // Инициализация адаптивных настроек
+        window.addEventListener('load', adjustForMobile);
+        window.addEventListener('resize', adjustForMobile);
+    </script>
+</body>
+</html>
+
